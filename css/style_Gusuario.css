@@ -1,0 +1,28 @@
+body {
+    background-color: #f0f0f0;
+}
+.profile-section {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+.profile-section img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.favorites-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.edit-section input {
+    margin-bottom: 10px;
+}
+.edit-icon, .delete-icon {
+    cursor: pointer;
+}
