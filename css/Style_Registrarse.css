@@ -1,0 +1,294 @@
+/* Barra de navegación */
+.navbar {
+    background-color: #047404; /* Fondo verde oscuro */
+    padding: 10px 20px;
+  }
+  
+  /* Logo y título */
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+  }
+  .navbar-brand:hover {
+    color: #0dbe24;
+  }
+  .navbar-brand .logo-img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Enlaces del menú */
+  .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #d4d4d4;
+  }
+  
+  /* Barra de búsqueda */
+  .search-form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .search-form .form-control {
+    background-color: #003600;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 0 40px 0 15px;
+    height: 45px;
+  }
+  
+  /* Estilo del placeholder */
+  .search-form .form-control::placeholder {
+    color: #cfcfcf;
+    font-style: italic;
+  }
+  .search-form .btn-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  /* Color al pasar el mouse en logo */
+  .search-form .btn-search:hover {
+    color: #0dbe24;
+  }
+  
+  /* Centrado del menú */
+  .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 1024px) {
+    .search-form {
+      width: 250px;
+    }
+    .navbar-nav {
+      gap: 5px;
+    }
+    .navbar-brand .logo-img {
+      height: 35px;
+    }
+    .navbar-brand {
+      font-size: 1.1rem;
+    }
+  }
+
+  body {
+    background: url('/img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Fondo semitransparente */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Negro semitransparente al 50% */
+    z-index: -1;
+}
+
+/* Contenedor principal */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 20px;
+}
+
+/* Tarjeta de registro */
+.register-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Título de registro */
+.register-header {
+    font-size: 1.5rem;
+    color: #047404; /* Verde oscuro */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Campos del formulario */
+label {
+    font-weight: bold;
+    color: #047404;
+    margin-top: 10px;
+}
+.form-control {
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+}
+.security-section {
+    display: flex;
+    gap: 10px;
+}
+
+/* Botón de continuar */
+.btn-success {
+    width: 100%;
+    background-color: #047404; /* Verde oscuro */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-success:hover {
+    background-color: #0dbe24; /* Verde brillante */
+}
+
+body {
+    background: url('/img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Fondo semitransparente */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Negro semitransparente al 50% */
+    z-index: -1;
+}
+
+/* Contenedor principal */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 20px;
+}
+
+/* Tarjeta de registro */
+.register-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Título de registro */
+.register-header {
+    font-size: 1.5rem;
+    color: #047404; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Campos del formulario */
+label {
+    font-weight: bold;
+    color: #047404;
+    margin-top: 10px;
+}
+.form-control {
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+}
+.security-section {
+    display: flex;
+    gap: 10px;
+}
+
+/* Botón de continuar */
+.btn-success {
+    width: 100%;
+    background-color: #047404; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-success:hover {
+    background-color: #0dbe24; 
+}
+
+/* Pie de página: Soporte */
+.footer-support {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.support-link {
+    color: #047404; /* Verde oscuro */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.support-link:hover {
+    color: #0dbe24;
+}
