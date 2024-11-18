@@ -1,3 +1,103 @@
+/* Barra de navegación */
+.navbar {
+    background-color: #047404; /* Fondo verde oscuro */
+    padding: 10px 20px;
+  }
+  
+  /* Logo y título */
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+  }
+  .navbar-brand:hover {
+    color: #0dbe24;
+  }
+  .navbar-brand .logo-img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Enlaces del menú */
+  .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #d4d4d4;
+  }
+  
+  /* Barra de búsqueda */
+  .search-form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .search-form .form-control {
+    background-color: #003600;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 0 40px 0 15px;
+    height: 45px;
+  }
+  
+  /* Estilo del placeholder */
+  .search-form .form-control::placeholder {
+    color: #cfcfcf;
+    font-style: italic;
+  }
+  .search-form .btn-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  /* Color al pasar el mouse en logo */
+  .search-form .btn-search:hover {
+    color: #0dbe24;
+  }
+  
+  /* Centrado del menú */
+  .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 1024px) {
+    .search-form {
+      width: 250px;
+    }
+    .navbar-nav {
+      gap: 5px;
+    }
+    .navbar-brand .logo-img {
+      height: 35px;
+    }
+    .navbar-brand {
+      font-size: 1.1rem;
+    }
+  }
+
 #editar_info {
     max-width: 400px; 
     margin: 50px auto; 
