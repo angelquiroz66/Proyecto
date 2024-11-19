@@ -101,7 +101,7 @@
 
 /* Fondo del contenedor */
 body {
-    background: url('/img/fondo.jpg') no-repeat center center fixed;
+    background-image: url('/img/fondo.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     font-family: Arial, sans-serif;
