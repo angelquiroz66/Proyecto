@@ -8,7 +8,7 @@
   .navbar-brand {
     font-weight: bold;
     font-size: 1.4rem;
-    color: white;
+    color: white !important;
     display: flex;
     align-items: center;
     transition: color 0.3s;

@@ -1,0 +1,156 @@
+/* Barra de navegación */
+.navbar {
+    background-color: #047404; /* Fondo verde oscuro */
+    padding: 10px 20px;
+}
+
+/* Logo y título */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white !important; /* Asegurar blanco para la marca */
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+.navbar-brand:hover {
+    color: #0dbe24; /* Cambia a verde claro al pasar el mouse */
+}
+.navbar-brand .logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Enlaces del menú */
+.navbar-nav .nav-link {
+    color: white; /* Asegurar blanco para los enlaces */
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #d4d4d4; /* Gris claro al pasar el mouse */
+}
+
+/* Barra de búsqueda */
+.search-form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.search-form .form-control {
+    background-color: #003600;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 0 40px 0 15px;
+    height: 45px;
+}
+
+/* Estilo del placeholder */
+.search-form .form-control::placeholder {
+    color: #cfcfcf;
+    font-style: italic;
+}
+.search-form .btn-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.search-form .btn-search:hover {
+    color: #0dbe24;
+}
+
+/* Centrado del menú */
+.navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .search-form {
+        width: 250px;
+    }
+    .navbar-nav {
+        gap: 5px;
+    }
+    .navbar-brand .logo-img {
+        height: 35px;
+    }
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+}
+
+/* Contenedor general */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: url('/img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Estilo del carrusel */
+#carouselMovies {
+    margin-top: 20px;
+}
+
+/* Tarjetas del carrusel */
+.movie-card {
+    width: 150px; 
+    margin: 0 10px; 
+    border: none; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.movie-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 6px 12px rgb(45, 238, 110); 
+}
+
+/* Imágenes de las tarjetas */
+.movie-card img {
+    border-radius: 5px; 
+    max-height: 200px; 
+    object-fit: cover; 
+    width: 100%; 
+}
+
+/* Títulos de las tarjetas */
+.card-title {
+    font-size: 16px; 
+    font-weight: bold;
+    color: #333;
+}
+
+/* Texto del porcentaje */
+.card-text {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Botones del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; 
+    padding: 10px;
+}
