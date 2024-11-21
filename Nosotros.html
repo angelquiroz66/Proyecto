@@ -1,11 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nosotros</title>
-</head>
-<body>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/Style_Nosotros.css" />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo y título -->
+        <a class="navbar-brand d-flex align-items-center" href="Peliculas.html">
+          <img src="/img/oso.jpg" alt="Logo" class="logo-img" />CINE_FILOS
+        </a>
+        <!-- Botón de Hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú colapsable -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Opciones del menú -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Registrarse.html">Registrarse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Peliculas.html">Películas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Miembros.html">Miembros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+          <!-- Barra de búsqueda -->
+          <form class="search-form d-flex position-relative">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Buscar"
+            />
+            <button class="btn btn-search" type="submit">🔍</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+     <!-- Nosotros -->
+     <div class="container mt-5">
+        <div class="row mb-5">
+          <div class="col-md-12 bg-light p-4 rounded shadow-sm">
+            <h2 class="fw-bold text-center text-success mb-4">¿Quiénes somos?</h2>
+            <p class="text-center">
+                <p><strong>Bienvenidos a <em>CINE_FILOS</em></strong>, una plataforma dedicada a ofrecer reseñas y análisis detallados sobre el mundo del cine. Somos un grupo de entusiastas del cine con diversas perspectivas y enfoques, unidos por la pasión de compartir nuestras opiniones y crear una comunidad activa de cinéfilos.</p>
+  
+                <p>En <strong><em>CINE_FILOS</em></strong>, creemos que cada película tiene una historia que contar, no solo en la pantalla, sino también en las opiniones de quienes la ven. Nuestra misión es proporcionar un espacio donde los usuarios puedan compartir sus reseñas, recomendaciones y valoraciones de películas, series y otros contenidos audiovisuales. Queremos ser un lugar donde tanto los aficionados como los conocedores del cine puedan encontrar críticas honestas, reflexivas y variadas.</p>
+                
+                <p>Invitamos a todos los amantes del cine a unirse a nuestra comunidad. Ya seas un espectador casual o un crítico experimentado, tu voz y tu opinión son valiosas para nosotros. Al registrarte, podrás compartir tus reseñas, leer las de otros usuarios y participar en discusiones sobre las películas que más te apasionan.</p>
+            </p>
+          </div>
+        </div>
     
-</body>
+        <!-- Contenido: Contáctanos -->
+        <div class="row justify-content-center">
+          <div class="col-md-8 bg-light rounded shadow p-4">
+            <h2 class="fw-bold text-center text-success mb-4">Contáctanos</h2>
+            <div class="row">
+              <!-- Teléfono -->
+              <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm">
+                  <div class="card-body text-center">
+                    <img src="/img/telefono.png" alt="Teléfono" class="icono-contacto mb-3">
+                    <h5 class="fw-bold">Teléfono</h5>
+                    <p>+52 8121746958</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Email -->
+              <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm">
+                  <div class="card-body text-center">
+                    <img src="/img/correo.png" alt="Email" class="icono-contacto mb-3">
+                    <h5 class="fw-bold">Email</h5>
+                    <p>CINE_FILOS_SOPORTE@hotmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- Pie de página -->
+    <footer class="text-end footer-support">
+        <a href="#" class="support-link">Soporte</a>
+    </footer>
+
+    <script src="/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

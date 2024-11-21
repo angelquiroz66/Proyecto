@@ -1,0 +1,201 @@
+/* Barra de navegación */
+.navbar {
+    background-color: #047404; /* Fondo verde oscuro */
+    padding: 10px 20px;
+  }
+  
+  /* Logo y título */
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+  }
+  .navbar-brand:hover {
+    color: #0dbe24;
+  }
+  .navbar-brand .logo-img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Enlaces del menú */
+  .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #d4d4d4;
+  }
+  
+  /* Barra de búsqueda */
+  .search-form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .search-form .form-control {
+    background-color: #003600;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 0 40px 0 15px;
+    height: 45px;
+  }
+  
+  /* Estilo del placeholder */
+  .search-form .form-control::placeholder {
+    color: #cfcfcf;
+    font-style: italic;
+  }
+  .search-form .btn-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  /* Color al pasar el mouse en logo */
+  .search-form .btn-search:hover {
+    color: #0dbe24;
+  }
+  
+  /* Centrado del menú */
+  .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 1024px) {
+    .search-form {
+      width: 250px;
+    }
+    .navbar-nav {
+      gap: 5px;
+    }
+    .navbar-brand .logo-img {
+      height: 35px;
+    }
+    .navbar-brand {
+      font-size: 1.1rem;
+    }
+  }
+  
+
+
+
+/* Fondo del contenedor */
+body {
+    background-image: url('/img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+
+  .icono-destacado {
+    width: 30px; /* Ajustar tamaño del icono */
+    height: 30px;
+    margin-left: 15px; /* Espaciado entre texto e icono */
+    vertical-align: middle;
+  }
+  
+  .actions .btn {
+    font-size: 0.9rem;
+    padding: 8px 15px; /* Tamaño uniforme */
+    border-radius: 20px; /* Bordes redondeados */
+  }
+
+  .miembros-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 1250px;
+    margin: 20px auto;
+}
+.miembros-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.miembros-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.miembros-header .actions a {
+    font-size: 0.9rem;
+    color: #047404;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.miembros-header .actions a:hover {
+    color: #0dbe24;
+}
+.miembros-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.miembro-item {
+    display: flex;
+    align-items: center;
+    background-color: #d1d9d2;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.miembro-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.miembro-item span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Pie de página: Soporte */
+.footer-support {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    padding: 5px 15px; /* Espaciado interno */
+    border: 1px solid #ced4da; /* Borde gris claro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+.support-link {
+  color: #047404; /* Verde oscuro */
+  font-weight: bold; /* Negrita */
+  text-decoration: none; /* Sin subrayado */
+  transition: color 0.3s; /* Efecto */
+}
+.support-link:hover {
+    color: #0dbe24;
+}
+

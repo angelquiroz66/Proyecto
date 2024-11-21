@@ -1,11 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miembros</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/Style_Miembros.css" />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo y título -->
+        <a class="navbar-brand d-flex align-items-center" href="Peliculas.html">
+          <img src="/img/oso.jpg" alt="Logo" class="logo-img" />CINE_FILOS
+        </a>
+        <!-- Botón de Hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú colapsable -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Opciones del menú -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Registrarse.html">Registrarse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Peliculas.html">Películas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Miembros.html">Miembros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+          <!-- Barra de búsqueda -->
+          <form class="search-form d-flex position-relative">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Buscar"
+            />
+            <button class="btn btn-search" type="submit">🔍</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+     <!-- Usuarios -->
+     <div class="miembros-container">
+        <div class="miembros-header">
+          <h2>
+            Lista de miembros destacados
+            <img src="/img/verificado.png" alt="Icono de destacado" class="icono-destacado" />
+          </h2>
+          <div class="actions">
+            <a href="#" class="btn btn-outline-success me-2">Registrarse</a>
+            <a href="#" class="btn btn-outline-success">Iniciar sesión</a>
+          </div>
+        </div>
+        <div class="miembros-list">
+          <!-- Usuario 1 -->
+          <div class="miembro-item">
+            <img src="/img/perfil1.jpg" alt="Usuario" />
+            <span>Usuario 1</span>
+          </div>
+          <!-- Usuario 2 -->
+          <div class="miembro-item">
+            <img src="/img/perfil2.jpg" alt="Usuario" />
+            <span>Usuario 2</span>
+          </div>
+          <!-- Usuario 3 -->
+          <div class="miembro-item">
+            <img src="/img/perfil3.jpg" alt="Usuario" />
+            <span>Usuario 3</span>
+          </div>
+          <!-- Usuario 4 -->
+          <div class="miembro-item">
+            <img src="/img/perfil4.jpg" alt="Usuario" />
+            <span>Usuario 4</span>
+          </div>
+          <!-- Usuario 5 -->
+          <div class="miembro-item">
+            <img src="/img/perfil5.jpg" alt="Usuario" />
+            <span>Usuario 5</span>
+          </div>
+          <!-- Usuario 6 -->
+          <div class="miembro-item">
+            <img src="/img/perfil6.jpg" alt="Usuario" />
+            <span>Usuario 6</span>
+          </div>
+          <!-- Usuario 7 -->
+          <div class="miembro-item">
+            <img src="/img/perfil7.jpg" alt="Usuario" />
+            <span>Usuario 7</span>
+          </div>
+          <!-- Usuario 8 -->
+          <div class="miembro-item">
+            <img src="/img/perfil8.jpg" alt="Usuario" />
+            <span>Usuario 8</span>
+          </div>
+          <!-- Usuario 9 -->
+          <div class="miembro-item">
+            <img src="/img/perfil9.jpg" alt="Usuario" />
+            <span>Usuario 9</span>
+          </div>
+          <!-- Usuario 10 -->
+          <div class="miembro-item">
+            <img src="/img/perfil10.jpg" alt="Usuario" />
+            <span>Usuario 10</span>
+          </div>
+        </div>
+      </div>
+
+    <!-- Pie de página -->
+    <footer class="text-end footer-support">
+        <a href="#" class="support-link">Soporte</a>
+    </footer>
+
+    <script src="/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

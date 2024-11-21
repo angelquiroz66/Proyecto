@@ -101,12 +101,14 @@
 
 /* Fondo del contenedor */
 body {
-    background-image: url('/img/fondo.jpg') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    position: relative;
-
+  background-image: url('/img/fondo.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
 }
 
 /* fondo semitransparente */
