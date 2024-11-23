@@ -1,0 +1,16 @@
+<script>
+        // Selecciona todos los elementos h3 dentro de la clase faq
+        const questions = document.querySelectorAll('.faq h3');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                // Alternar la respuesta de la pregunta clicada
+                const answer = question.nextElementSibling;
+                if (answer.style.display === "block") {
+                    answer.style.display = "block";
+                } else {
+                    answer.style.display = "block";
+                }
+            });
+        });
+    </script>
