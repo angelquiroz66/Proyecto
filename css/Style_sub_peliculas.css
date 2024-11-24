@@ -1,0 +1,185 @@
+/* Barra de navegación */
+.navbar {
+    background-color: #047404; /* Fondo verde oscuro */
+    padding: 10px 20px;
+  }
+  
+  /* Logo y título */
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+  }
+  .navbar-brand:hover {
+    color: #0dbe24;
+  }
+  .navbar-brand .logo-img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Enlaces del menú */
+  .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #d4d4d4;
+  }
+  
+  /* Barra de búsqueda */
+  .search-form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .search-form .form-control {
+    background-color: #003600;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 0 40px 0 15px;
+    height: 45px;
+  }
+  
+  /* Estilo del placeholder */
+  .search-form .form-control::placeholder {
+    color: #cfcfcf;
+    font-style: italic;
+  }
+  .search-form .btn-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  /* Color al pasar el mouse en logo */
+  .search-form .btn-search:hover {
+    color: #0dbe24;
+  }
+  
+  /* Centrado del menú */
+  .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 1024px) {
+    .search-form {
+      width: 250px;
+    }
+    .navbar-nav {
+      gap: 5px;
+    }
+    .navbar-brand .logo-img {
+      height: 35px;
+    }
+    .navbar-brand {
+      font-size: 1.1rem;
+    }
+  }
+
+   /* Fondo del contenedor */
+   body {
+    background-image: url('/img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+
+/*Pelicula1 y demas*/
+  .movie-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .rating {
+    background-color: #ffc107;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .user-review {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .star-img {
+    width: 20px;
+    height: 20px;
+  }.movie-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .rating {
+    background-color: #ffc107;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .user-review {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .star {
+    color: #ffc107;
+  }
+
+
+
+
+
+
+  /* Pie de página */
+.footer-support {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.support-link {
+    color: #047404;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.support-link:hover {
+    color: #0dbe24;
+}
