@@ -1,6 +1,6 @@
 /* Barra de navegación */
 .navbar {
-  background-color: #047404; /* Fondo verde oscuro */
+  background-color: #047404;
   padding: 10px 20px;
 }
 
@@ -97,6 +97,7 @@
     font-size: 1.1rem;
   }
 }
+
 
 
 /* Fondo del contenedor */

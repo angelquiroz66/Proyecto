@@ -14,55 +14,73 @@
   </head>
   <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <!-- Logo y título -->
-        <a class="navbar-brand d-flex align-items-center" href="Peliculas.html">
-          <img src="/img/oso.jpg" alt="Logo" class="logo-img" />CINE_FILOS
-        </a>
-        <!-- Botón de Hamburguesa -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <!-- Logo y título -->
+    <a class="navbar-brand d-flex align-items-center" href="Peliculas.html">
+      <img src="/img/oso.jpg" alt="Logo" class="logo-img" />CINE_FILOS
+    </a>
+    <!-- Botón de Hamburguesa -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!-- Menú colapsable -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <!-- Opciones del menú -->
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="Registrarse.html">Registrarse</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Peliculas.html">Películas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Miembros.html">Miembros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Nosotros.html">Nosotros</a>
-            </li>
-          </ul>
-          <!-- Barra de búsqueda -->
-          <form class="search-form d-flex position-relative">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Buscar"
-            />
-            <button class="btn btn-search" type="submit">🔍</button>
-          </form>
-        </div>
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Opciones del menú -->
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Registrarse.html">Registrarse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Peliculas.html">Películas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Miembros.html">Miembros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Nosotros.html">Nosotros</a>
+        </li>
+      </ul>
+      <!-- Barra de búsqueda -->
+      <form class="search-form d-flex position-relative">
+        <input
+          class="form-control"
+          type="search"
+          placeholder="Buscar"
+          aria-label="Buscar"
+        />
+        <button class="btn btn-search" type="submit">🔍</button>
+      </form>
+      <!-- Foto de perfil y menú -->
+      <div class="profile-menu dropdown ms-3">
+        <img
+          src="/img/profileblankfoto.webp"
+          alt="Foto de perfil"
+          class="profile-img dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        />
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="Ajustes.html">Ajustes</a></li>
+          <li><a class="dropdown-item" href="/Iniciar sesion.html">Iniciar sesión</a></li>
+          <li><a class="dropdown-item" href="/Registrarse.html">Registrarse</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
+
+
+    
 
      <!-- Usuarios -->
      <div class="miembros-container">

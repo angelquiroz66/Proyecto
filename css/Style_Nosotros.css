@@ -99,6 +99,38 @@
   }
   
 
+/* Foto de perfil */
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: border-color 0.3s;
+}
+.profile-img:hover {
+  border-color: #0dbe24;
+}
+
+/* Menú desplegable */
+.profile-menu .dropdown-menu {
+  background-color: #047404;
+  border: none;
+  border-radius: 5px;
+  min-width: 150px;
+}
+.profile-menu .dropdown-menu .dropdown-item {
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+.profile-menu .dropdown-menu .dropdown-item:hover {
+  background-color: #0dbe24;
+  color: #fff;
+}
+
+
+
   
   /* Fondo del contenedor */
   body {
